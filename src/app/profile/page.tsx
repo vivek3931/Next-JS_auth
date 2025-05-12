@@ -14,7 +14,7 @@ export default function Profile() {
       await axios.get("/api/users/logout");
       toast.success("Logout Successfully");
       router.push("/login");
-    } catch (error) {
+    } catch (error:any) {
       toast.error("Something went wrong", error.message);
     }
   };
